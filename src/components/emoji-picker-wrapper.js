@@ -38,6 +38,7 @@ const EmojiPickerWrapper = props => {
   const {
     theme,
     keepOpened,
+    onEmojiClick,
     disableRecent,
     customEmojis,
     addSanitizeFn,
@@ -65,7 +66,7 @@ const EmojiPickerWrapper = props => {
      */
     function checkClickOutside(event) {
       /** @type {HTMLElement} */
-      // @ts-ignore
+        // @ts-ignore
       const element = event.target;
 
       if (
@@ -92,7 +93,7 @@ const EmojiPickerWrapper = props => {
   function toggleShowPicker(event) {
     event.stopPropagation();
     event.preventDefault();
-
+    onEmojiClick && onEmojiClick();
     setShowPicker(currentShowPicker => !currentShowPicker);
   }
 

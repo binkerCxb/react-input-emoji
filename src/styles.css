@@ -102,9 +102,12 @@
 .react-input-emoji--button svg {
   fill: #858585;
 }
+.react-input-emoji--button:hover svg {
+  fill: #FFFFFF;
+}
 
 .react-input-emoji--button__show svg {
-  fill: #128b7e;
+  fill: #FFFFFF;
 }
 
 .react-emoji {

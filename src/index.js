@@ -67,6 +67,7 @@ import { usePollute } from "./hooks/user-pollute";
 function InputEmoji(props, ref) {
   const {
     onChange,
+    onEmojiClick,
     onEnter,
     onResize,
     onClick,
@@ -321,6 +322,7 @@ function InputEmoji(props, ref) {
         theme={theme}
         keepOpened={keepOpened}
         disableRecent={disableRecent}
+        onEmojiClick={onEmojiClick}
         customEmojis={customEmojis}
         addSanitizeFn={addSanitizeFn}
         addPolluteFn={addPolluteFn}

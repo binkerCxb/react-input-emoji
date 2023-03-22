@@ -47,7 +47,7 @@ function EmojiPickerButton({ showPicker, toggleShowPicker, buttonElement }) {
           {/* eslint-disable-next-line max-len */}
           <path d="M8 7a2 2 0 1 0-.001 3.999A2 2 0 0 0 8 7M16 7a2 2 0 1 0-.001 3.999A2 2 0 0 0 16 7M15.232 15c-.693 1.195-1.87 2-3.349 2-1.477 0-2.655-.805-3.347-2H15m3-2H6a6 6 0 1 0 12 0" />
         </svg>
-      )}
+        )}
     </button>
   );
 }
